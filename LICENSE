@@ -1,0 +1,43 @@
+利用許諾 / License Terms
+
+Copyright (c) 2026 MetamoL
+本ライセンスで明示的に許可した範囲を除き、すべての権利を留保します。
+
+【日本語（正文）】
+
+次のことを、無償で許可します。
+
+1. 本リポジトリの内容（以下「本コンテンツ」）を閲覧・ダウンロードし、自分の環境
+   （Claude Code などの AI ツール）へ導入して使うこと。個人利用・業務利用のどちらでも
+   かまいません。
+2. 自分（または自分の所属組織内）で使うための改変。
+3. 本コンテンツを使って生成・執筆した成果物の利用。成果物の権利は利用者に帰属し、
+   商用利用も自由です。
+4. 本リポジトリへのリンクの共有・紹介。出典（本リポジトリ名またはURL）を示した
+   短い引用を伴う紹介・論評（記事・SNS投稿など）も歓迎します。
+
+次のことは禁止します。
+
+1. 本コンテンツ（改変版・翻訳版を含む）の再配布・転載・再公開・販売。
+   有償・無償を問いません。
+2. 本コンテンツの全部または実質的な部分を、記事・教材・プロンプト集などの
+   自分のコンテンツに組み込んで提供すること。
+3. 本コンテンツを自作と称すること。著作権表示・本ライセンス表記の除去。
+
+本コンテンツは現状有姿で提供されます。作者はいかなる保証も行わず、
+利用によって生じた損害について責任を負いません。
+
+【English (summary — the Japanese text above is authoritative)】
+
+You may, free of charge: view and download this content; install and use it in
+your own AI tooling, for personal or business purposes alike; modify it for your
+own use; and freely use anything you create with it (your outputs are yours,
+including commercially). Sharing links to this repository is welcome, and so is
+quoting short excerpts with attribution for reviews or introductions.
+
+You may not: redistribute, republish, or sell this content or modified versions
+of it; incorporate it, in whole or substantial part, into your own products such
+as articles, courses, or prompt collections; claim it as your own; or remove
+this notice.
+
+Provided "as is", without warranty of any kind.
