@@ -1,6 +1,6 @@
 # fiction-prose-jp
 
-AI に小説の本文を書かせる・直させるときの「AIくささ」を取り除く、Claude Code 用の執筆規範スキルです。
+AI に小説の本文を書かせる・直させるときの「AIくささ」を取り除く、Claude Code と Codex の双方で使える執筆規範スキルです。
 文章のリズムだけでなく、**持ち物・時刻・距離・人物が知っていることの整合**まで管理します。
 （English summary: [README.en.md](README.en.md)）
 
@@ -27,27 +27,37 @@ AI に書かせた本文にありがちな一節:
 
 作品固有の文体規定（文体カルテ）がある場合はそちらが優先で、このスキルは「その基調の中で波を作る」ための層です。
 
-## 導入（Claude Code）
+## 導入（Claude Code / Codex）
 
-`skills/` 配下を `~/.claude/skills/` にコピーするだけです。スクリプトを使う場合:
+`skills/` 配下を Claude Code の `~/.claude/skills/` または Codex の `$HOME/.agents/skills/` にコピーするだけです。スクリプトを使う場合:
 
 Windows (PowerShell):
 
 ```powershell
+# Claude Code（引数なし。従来どおり）
 powershell -ExecutionPolicy Bypass -File .\install.ps1
+# Codex
+powershell -ExecutionPolicy Bypass -File .\install.ps1 -Target codex
+# Claude Code と Codex の両方
+powershell -ExecutionPolicy Bypass -File .\install.ps1 -Target both
 ```
 
 Mac / Linux:
 
 ```sh
+# Claude Code（引数なし。従来どおり）
 sh install.sh
+# Codex
+sh install.sh codex
+# Claude Code と Codex の両方
+sh install.sh both
 ```
 
 ※ 同名のスキルが既にある場合は上書きされます。
 
 ## 使い方
 
-小説の話・章・場面の執筆や、下書きの推敲・リライトを頼むと自動で発火します。明示的に使うときは `/fiction-prose-jp` で呼び出せます。
+小説の話・章・場面の執筆や、下書きの推敲・リライトを頼むと、Claude Code と Codex のどちらでも `SKILL.md` の description と依頼内容が一致したときに自動で発火します。Claude Code で明示的に使うときは `/fiction-prose-jp`、Codex では `$skill-name`（例: `$fiction-prose-jp`）で呼び出せます。Codex で利用可能なスキルの一覧は `/skills` で確認できます。導入後に反映されない場合は、対象のホストを再起動してください。
 Claude Code 以外の AI ツールでも、`SKILL.md` は素の Markdown なので、システムプロンプトやカスタム指示に貼り付けて使えます。
 
 ## 姉妹リポジトリ
